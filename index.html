@@ -2,40 +2,124 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Royal Roam Tours | Stonehenge, Bath & Oxford Day Tour</title>
+<title>Royal Roam Tours | Stonehenge & Bath Day Tour from London</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Premium UK day tours from London to Stonehenge, Bath and Oxford. Book securely online with Royal Roam Tours.">
+<meta name="description" content="Premium Stonehenge and Bath day tour from London with Royal Roam Tours. Comfortable transport, small-group feel and secure online booking.">
 
 <script src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=b17790a0-84e2-4458-8664-692d90deecfc" async></script>
 
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f6f4ef;color:#162033;line-height:1.6}
-header{background:#fff;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f3ea;color:#142033;line-height:1.6}
+a{text-decoration:none;color:inherit}
+
+header{
+  background:#fff;
+  padding:20px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 20px rgba(0,0,0,.08);
+  position:sticky;
+  top:0;
+  z-index:99;
+}
 .logo{font-size:24px;font-weight:900;letter-spacing:3px;color:#10263a}
 .nav{font-size:14px;color:#555}
-.hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=1600&q=80') center/cover;color:white;text-align:center;padding:110px 20px}
-.hero h1{font-size:46px;line-height:1.1;margin:0 0 18px}
-.hero p{font-size:20px;max-width:760px;margin:0 auto 28px}
-.bokunButton{background:#c9a44c;color:#10263a;padding:16px 32px;border-radius:999px;border:none;font-weight:900;font-size:18px;cursor:pointer}
-.section{max-width:1100px;margin:35px auto;padding:28px;background:white;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-h2{color:#10263a;font-size:32px;margin-top:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-.card{background:#f1f4f8;border-radius:16px;overflow:hidden}
-.card img{width:100%;height:210px;object-fit:cover;display:block}
-.card div{padding:18px}
-.card h3{margin:0 0 8px;color:#10263a}
-.feature{padding:18px;background:#f7f7f7;border-radius:14px;font-weight:700}
-.price{font-size:28px;font-weight:900;color:#10263a}
-.notice{background:#fff8e6;border:1px solid #e8cf8b;padding:16px;border-radius:14px}
-.footer{background:#10263a;color:white;text-align:center;padding:32px 18px;font-size:14px}
-.small{color:#666;font-size:14px}
-@media(max-width:600px){
-.hero h1{font-size:36px}
-.hero p{font-size:18px}
-.logo{font-size:21px}
-header{display:block;text-align:center}
-.nav{margin-top:6px}
+
+.hero{
+  min-height:88vh;
+  background:
+  linear-gradient(rgba(10,20,35,.55),rgba(10,20,35,.75)),
+  url('https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=1800&q=80') center/cover;
+  color:white;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  padding:80px 20px;
+}
+.hero-inner{max-width:900px;margin:auto}
+.hero h1{font-size:58px;line-height:1.05;margin:0 0 20px}
+.hero p{font-size:21px;max-width:760px;margin:0 auto 30px}
+.badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+.badge{background:rgba(255,255,255,.18);padding:10px 16px;border-radius:999px;font-weight:700}
+
+.bokunButton{
+  background:#d6ad45;
+  color:#10263a;
+  padding:17px 36px;
+  border-radius:999px;
+  border:none;
+  font-weight:900;
+  font-size:18px;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+.bokunButton:hover{background:#e6c15a}
+
+.section{
+  max-width:1150px;
+  margin:38px auto;
+  padding:34px;
+  background:white;
+  border-radius:24px;
+  box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+h2{font-size:34px;margin-top:0;color:#10263a}
+.lead{font-size:18px;color:#39475a}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+}
+.card{
+  background:#f4f6f8;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 8px 22px rgba(0,0,0,.07);
+}
+.card img{width:100%;height:240px;object-fit:cover;display:block}
+.card-content{padding:22px}
+.card h3{margin:0 0 10px;color:#10263a;font-size:24px}
+
+.feature{
+  background:#f7f3ea;
+  border:1px solid #eadcbf;
+  padding:18px;
+  border-radius:16px;
+  font-weight:800;
+}
+.price-box{
+  background:#10263a;
+  color:white;
+  padding:32px;
+  border-radius:22px;
+}
+.price{font-size:38px;font-weight:900;color:#d6ad45}
+.notice{
+  background:#fff8e6;
+  border:1px solid #e4c86f;
+  padding:18px;
+  border-radius:16px;
+  font-weight:700;
+}
+.faq p{border-bottom:1px solid #eee;padding-bottom:14px}
+.footer{
+  background:#10263a;
+  color:white;
+  text-align:center;
+  padding:36px 18px;
+  font-size:14px;
+}
+.small{font-size:14px;color:#666}
+
+@media(max-width:700px){
+  header{display:block;text-align:center}
+  .nav{margin-top:8px}
+  .hero h1{font-size:39px}
+  .hero p{font-size:18px}
+  .section{margin:24px 14px;padding:24px}
 }
 </style>
 </head>
@@ -44,107 +128,136 @@ header{display:block;text-align:center}
 
 <header>
   <div class="logo">ROYAL ROAM TOURS</div>
-  <div class="nav">Premium UK Sightseeing</div>
+  <div class="nav">Premium UK Day Tours from London</div>
 </header>
 
 <section class="hero">
-  <h1>Stonehenge, Bath & Oxford Day Tour from London</h1>
-  <p>Discover three of England’s most iconic destinations in one carefully planned full-day sightseeing tour.</p>
-
-  <button class="bokunButton" id="bokun_0ea282cb_7d85_4dfd_851f_d44d495ae32b"
-  data-src="https://widgets.bokun.io/online-sales/b17790a0-84e2-4458-8664-692d90deecfc/experience/1205306?partialView=1">
-  Book Now
-  </button>
-
-  <p style="margin-top:14px;color:#fff;">Secure booking · Free cancellation · Instant confirmation</p>
-</section>
-
-<section class="section">
-  <h2>About the Tour</h2>
-  <p>Join Royal Roam Tours for a full-day trip from London to Stonehenge, Bath and Oxford. This itinerary is designed for visitors who want to experience ancient history, Roman heritage and one of the world’s most famous university cities in one day.</p>
-</section>
-
-<section class="section">
-  <h2>Featured Tour</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=1200&q=80" alt="Stonehenge">
-      <div>
-        <h3>Stonehenge, Bath & Oxford</h3>
-        <p>Premium full-day sightseeing tour from London.</p>
-        <p class="price">From £120</p>
-        <button class="bokunButton" id="bokun_0ea282cb_7d85_4dfd_851f_d44d495ae32b_2"
-        data-src="https://widgets.bokun.io/online-sales/b17790a0-84e2-4458-8664-692d90deecfc/experience/1205306?partialView=1">
-        Book Now
-        </button>
-      </div>
+  <div class="hero-inner">
+    <div class="badges">
+      <div class="badge">Stonehenge</div>
+      <div class="badge">Bath</div>
+      <div class="badge">From London</div>
     </div>
+
+    <h1>Stonehenge & Bath Day Tour from London</h1>
+    <p>Experience two of England’s most iconic destinations in one beautifully planned full-day tour with comfortable transport and a premium small-group feel.</p>
+
+    <button class="bokunButton" id="bokun_stonehenge_bath_1"
+    data-src="https://widgets.bokun.io/online-sales/b17790a0-84e2-4458-8664-692d90deecfc/experience/1205306?partialView=1">
+    Book Now
+    </button>
+
+    <p style="margin-top:16px;font-size:15px;">Secure booking · Free cancellation · Instant confirmation</p>
   </div>
 </section>
 
 <section class="section">
-  <h2>Destinations You’ll Visit</h2>
+  <h2>A Premium Day Out from London</h2>
+  <p class="lead">Join Royal Roam Tours for a carefully organised journey to Stonehenge and Bath. This tour is ideal for visitors who want to see ancient history, beautiful countryside and one of Britain’s most elegant cities without feeling rushed.</p>
+</section>
+
+<section class="section">
+  <h2>Destinations</h2>
+
   <div class="grid">
-
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=1200&q=80" alt="Stonehenge">
-      <div>
+      <img src="https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=1200&q=80" alt="Stonehenge ancient stone circle">
+      <div class="card-content">
         <h3>Stonehenge</h3>
-        <p>Visit one of the world’s most famous prehistoric monuments.</p>
+        <p>Visit the world-famous prehistoric stone circle and discover one of Britain’s most mysterious ancient landmarks.</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1602595688238-f47f61a87e2f?auto=format&fit=crop&w=1200&q=80" alt="Bath">
-      <div>
+      <img src="https://images.unsplash.com/photo-1602595688238-f47f61a87e2f?auto=format&fit=crop&w=1200&q=80" alt="Historic city of Bath">
+      <div class="card-content">
         <h3>Bath</h3>
-        <p>Discover Roman heritage and beautiful Georgian architecture.</p>
+        <p>Explore the beautiful city of Bath, known for its Roman heritage, Georgian architecture, shopping streets and historic charm.</p>
       </div>
     </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1200&q=80" alt="Oxford">
-      <div>
-        <h3>Oxford</h3>
-        <p>Explore the historic university city known for its colleges and architecture.</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
 <section class="section">
   <h2>Tour Highlights</h2>
+
   <div class="grid">
+    <div class="feature">✔ Full-day tour from London</div>
     <div class="feature">✔ Visit Stonehenge</div>
-    <div class="feature">✔ Explore Bath</div>
-    <div class="feature">✔ Discover Oxford</div>
-    <div class="feature">✔ Comfortable transport from London</div>
+    <div class="feature">✔ Free time to explore Bath</div>
+    <div class="feature">✔ Comfortable executive transport</div>
+    <div class="feature">✔ Professional driver host</div>
+    <div class="feature">✔ Ideal for couples, families and visitors</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>What’s Included</h2>
+
+  <div class="grid">
+    <div class="feature">✔ Return transport from London</div>
+    <div class="feature">✔ Comfortable coach or executive vehicle</div>
+    <div class="feature">✔ Driver host support</div>
+    <div class="feature">✔ Stonehenge visit</div>
+    <div class="feature">✔ Bath city stop</div>
+    <div class="feature">✔ Online booking confirmation</div>
   </div>
 </section>
 
 <section class="section">
   <h2>Tour Information</h2>
-  <p><strong>Departure:</strong> London</p>
-  <p><strong>Duration:</strong> Approximately 10–12 hours</p>
+
+  <div class="price-box">
+    <p>Adults from</p>
+    <div class="price">£120</div>
+    <p>Children from £100</p>
+
+    <button class="bokunButton" id="bokun_stonehenge_bath_2"
+    data-src="https://widgets.bokun.io/online-sales/b17790a0-84e2-4458-8664-692d90deecfc/experience/1205306?partialView=1">
+    Check Availability
+    </button>
+  </div>
+
+  <p><strong>Departure:</strong> Central London</p>
+  <p><strong>Duration:</strong> Approximately 10 to 11 hours</p>
   <p><strong>Group size:</strong> Maximum 30 guests</p>
-  <p><strong>Price:</strong> Adults from £120 · Children from £100</p>
+  <p><strong>Meeting point:</strong> Confirmed after booking</p>
   <p><strong>Entry tickets:</strong> Subject to selected package and availability</p>
 </section>
 
 <section class="section">
   <h2>Cancellation Policy</h2>
   <p>Free cancellation up to 24 hours before departure.</p>
+
   <div class="notice">
-    This tour operates with a minimum of 6 participants. If the minimum is not met, an alternative date or a full refund will be offered.
+    This tour operates with a minimum of 6 participants. If the minimum is not met, guests will be offered an alternative date or a full refund.
   </div>
 </section>
 
+<section class="section faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <p><strong>Are Stonehenge tickets included?</strong><br>
+  Entry depends on the package selected during booking.</p>
+
+  <p><strong>How long is the tour?</strong><br>
+  The tour normally takes approximately 10 to 11 hours.</p>
+
+  <p><strong>Where does the tour start?</strong><br>
+  The meeting point is in Central London and will be confirmed after booking.</p>
+
+  <p><strong>Can children join this tour?</strong><br>
+  Yes, this tour is suitable for families and children.</p>
+
+  <p><strong>Is food included?</strong><br>
+  Food and drinks are not included unless stated in your booking option.</p>
+</section>
+
 <section class="section">
-  <h2>Contact</h2>
+  <h2>Contact Royal Roam Tours</h2>
   <p><strong>Email:</strong> bookings@royalroamtours.com</p>
   <p><strong>Phone/WhatsApp:</strong> +44 7XXX XXX XXX</p>
-  <p class="small">Replace the phone number with your real number before submitting to GetYourGuide.</p>
+  <p class="small">Replace this with your real phone number before going live.</p>
 </section>
 
 <div class="footer">
